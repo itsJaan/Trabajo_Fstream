@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/clientes.h
+
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/cuentas.cpp
+cuentas.h
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/cuentas.h
+fstream
+-
+iostream
+-
+
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/cuentas.h
+clientes.h
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/clientes.h
+transaccion.h
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/transaccion.h
+
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/main.cpp
+iostream
+-
+fstream
+-
+cuentas.h
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/cuentas.h
+transaccion.h
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/transaccion.h
+
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/transaccion.h
+
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/transacciones.h.cpp
+iostream
+-
+fstream
+-
+transaccion.h
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/transaccion.h
+clientes.h
+C:/Users/Javier Nunez/CLionProjects/EjercicioClase_S1-Fstream/clientes.h
+
