@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/cuentas.cpp
+cuentas.h
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/cuentas.h
+fstream
+-
+iostream
+-
+
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/cuentas.h
+
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/main.cpp
+iostream
+-
+fstream
+-
+cuentas.h
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/cuentas.h
+transacciones.h
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/transacciones.h
+cuentas.h
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/cuentas.h
+
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/transacciones.cpp
+transacciones.h
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/transacciones.h
+cuentas.h
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/cuentas.h
+iostream
+-
+fstream
+-
+
+C:/Users/Javier Nunez/CLionProjects/Ejercicio_ArchivosBinarios_TrabajoClase/transacciones.h
+

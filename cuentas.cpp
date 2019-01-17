@@ -1,77 +1,50 @@
 //
-// Created by Javier Nunez on 1/15/2019.
+// Created by Javier Nunez on 1/17/2019.
 //
 
 #include "cuentas.h"
 #include <fstream>
 #include <iostream>
-
 using namespace std;
 
 
-void cuentas::crear_cuenta() {
-    //valor nulo
-    float v=0;
 
-    clientes nuevo;
+void cuentas::agregarCliente() {
+    ofstream binaryfile("Maestro_Cuentas.dat", ios::app | ios::out | ios::binary);
 
+    if(!binaryfile) {
+        cout<<"Error al abrir archivo"<<endl;
+    }
+
+    cliente nuevo;
+    cout<<endl<<"--- Ingresando Cuenta ---\n";
     cout<<"Ingrese codigo:";
     cin>>nuevo.n_cuenta;
     cout<<"Ingrese nombre:";
     cin>>nuevo.nombre;
+    cout<<"Se ingreso cuenta correctamente\n";
+    cout<<"-----------------------------------\n\n";
+    nuevo.saldo = 0;
 
-    nuevo.saldo=v;
-
-    ofstream archivo("Transacciones", ios::out | ios::binary);
-    if(!archivo){
-        cout<<"Error ocurrido al abrir el archivo"<<endl;
-        return;
-    }
-    archivo.seekp(0, ios::beg);
-    archivo.write((char*) &nuevo , sizeof(clientes));
-    cout<<"Se creo Correctamente\n";
-
-    return;
+    binaryfile.seekp(0, ios::end );
+    binaryfile.write(reinterpret_cast<const char*>(&nuevo), sizeof(cliente));
+    binaryfile.close();
 }
 
-void cuentas::imprimir_resumen_cuentas() {
-
-    ifstream archivoA ("Maestro_Cuentas.dat", ios::in|ios::binary);
-    clientes temporal;
-
-    if(!archivoA){
-        cout<<"Error al intentar abrir el archivo"<<endl;
-        return;
-    }
-    cout<<endl<<"*Clientes Registrados *\n";
-    archivoA.seekg(0,ios::beg);
-    archivoA.read(reinterpret_cast<char *>(&temporal), sizeof(clientes));
-    while(!archivoA.eof()){
-        cout<<"codigo:" << temporal.n_cuenta << ", Nombre:" << temporal.nombre << ", Saldo: " << temporal.saldo<< "\n";
-        archivoA.read(reinterpret_cast<char *>(&temporal), sizeof(clientes));
-    }
-    archivoA.close();
-    return;
-
-}
-void cuentas::imprimir_resumen_trans() {
-
-    ifstream archivoB ("Transacciones.dat", ios::in|ios::binary);
-    transaccion temporalT;
-
-    if(!archivoB){
-        cout<<"Error al intentar abrir el archivo"<<endl;
+void cuentas::consultarCliente() {
+    ifstream empleadoIn("Maestro_Cuentas.dat", ios::in | ios::binary);
+    if(!empleadoIn){
+        cout<<"Error al intentar abrir el archivo Empleados.dat"<<endl;
         return;
     }
 
-    cout << endl << "* Historial de Transacciones *\n";
-    archivoB.seekg(0, ios::beg);
-    archivoB.read(reinterpret_cast<char *>(&temporalT), sizeof(transaccion));
-    while (!archivoB.eof()) {
-        cout << "codigo:" << temporalT.n_cuenta << ", Tipo:" << temporalT.t_trans << ", Monto: "
-             << temporalT.monto_trans <<"\n";
-        archivoB.read(reinterpret_cast<char *>(&temporalT), sizeof(transaccion));
+    cliente temporal;
+    cout<<"--------------------Clientes Activos-----------------------------\n";
+    empleadoIn.seekg(0,ios::beg);
+    empleadoIn.read(reinterpret_cast<char *>(&temporal), sizeof(cliente));
+    while(!empleadoIn.eof()){
+        cout<<"Codigo:" << temporal.n_cuenta << "  Nombre:" << temporal.nombre << "    Saldo: " << temporal.saldo<< "\n";
+        empleadoIn.read(reinterpret_cast<char *>(&temporal), sizeof(cliente));
     }
-    archivoB.close();
-    return;
+    empleadoIn.close();
 }

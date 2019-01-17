@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(EjercicioClase_S1_Fstream)
+project(Ejercicio_ArchivosBinarios_TrabajoClase)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(EjercicioClase_S1_Fstream main.cpp clientes.h transaccion.h cuentas.cpp cuentas.h transacciones.h.cpp)
+add_executable(Ejercicio_ArchivosBinarios_TrabajoClase main.cpp cuentas.cpp cuentas.h transacciones.cpp transacciones.h)

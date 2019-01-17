@@ -50,5 +50,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/EjercicioClase_S1_Fstream.dir/DependInfo.cmake"
+  "CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/DependInfo.cmake"
   )

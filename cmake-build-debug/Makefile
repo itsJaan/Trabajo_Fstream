@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Javier Nunez\CLionProjects\EjercicioClase_S1-Fstream"
+CMAKE_SOURCE_DIR = "C:\Users\Javier Nunez\CLionProjects\Ejercicio_ArchivosBinarios_TrabajoClase"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Javier Nunez\CLionProjects\EjercicioClase_S1-Fstream\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Javier Nunez\CLionProjects\Ejercicio_ArchivosBinarios_TrabajoClase\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Javier Nunez\CLionProjects\EjercicioClase_S1-Fstream\cmake-build-debug\CMakeFiles" "C:\Users\Javier Nunez\CLionProjects\EjercicioClase_S1-Fstream\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Javier Nunez\CLionProjects\Ejercicio_ArchivosBinarios_TrabajoClase\cmake-build-debug\CMakeFiles" "C:\Users\Javier Nunez\CLionProjects\Ejercicio_ArchivosBinarios_TrabajoClase\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Javier Nunez\CLionProjects\EjercicioClase_S1-Fstream\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Javier Nunez\CLionProjects\Ejercicio_ArchivosBinarios_TrabajoClase\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named EjercicioClase_S1_Fstream
+# Target rules for targets named Ejercicio_ArchivosBinarios_TrabajoClase
 
 # Build rule for target.
-EjercicioClase_S1_Fstream: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 EjercicioClase_S1_Fstream
-.PHONY : EjercicioClase_S1_Fstream
+Ejercicio_ArchivosBinarios_TrabajoClase: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Ejercicio_ArchivosBinarios_TrabajoClase
+.PHONY : Ejercicio_ArchivosBinarios_TrabajoClase
 
 # fast build rule for target.
-EjercicioClase_S1_Fstream/fast:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/build
-.PHONY : EjercicioClase_S1_Fstream/fast
+Ejercicio_ArchivosBinarios_TrabajoClase/fast:
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/build
+.PHONY : Ejercicio_ArchivosBinarios_TrabajoClase/fast
 
 cuentas.obj: cuentas.cpp.obj
 
@@ -128,7 +128,7 @@ cuentas.obj: cuentas.cpp.obj
 
 # target to build an object file
 cuentas.cpp.obj:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/cuentas.cpp.obj
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/cuentas.cpp.obj
 .PHONY : cuentas.cpp.obj
 
 cuentas.i: cuentas.cpp.i
@@ -137,7 +137,7 @@ cuentas.i: cuentas.cpp.i
 
 # target to preprocess a source file
 cuentas.cpp.i:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/cuentas.cpp.i
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/cuentas.cpp.i
 .PHONY : cuentas.cpp.i
 
 cuentas.s: cuentas.cpp.s
@@ -146,7 +146,7 @@ cuentas.s: cuentas.cpp.s
 
 # target to generate assembly for a file
 cuentas.cpp.s:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/cuentas.cpp.s
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/cuentas.cpp.s
 .PHONY : cuentas.cpp.s
 
 main.obj: main.cpp.obj
@@ -155,7 +155,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -164,7 +164,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -173,35 +173,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-transacciones.h.obj: transacciones.h.cpp.obj
+transacciones.obj: transacciones.cpp.obj
 
-.PHONY : transacciones.h.obj
+.PHONY : transacciones.obj
 
 # target to build an object file
-transacciones.h.cpp.obj:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/transacciones.h.cpp.obj
-.PHONY : transacciones.h.cpp.obj
+transacciones.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/transacciones.cpp.obj
+.PHONY : transacciones.cpp.obj
 
-transacciones.h.i: transacciones.h.cpp.i
+transacciones.i: transacciones.cpp.i
 
-.PHONY : transacciones.h.i
+.PHONY : transacciones.i
 
 # target to preprocess a source file
-transacciones.h.cpp.i:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/transacciones.h.cpp.i
-.PHONY : transacciones.h.cpp.i
+transacciones.cpp.i:
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/transacciones.cpp.i
+.PHONY : transacciones.cpp.i
 
-transacciones.h.s: transacciones.h.cpp.s
+transacciones.s: transacciones.cpp.s
 
-.PHONY : transacciones.h.s
+.PHONY : transacciones.s
 
 # target to generate assembly for a file
-transacciones.h.cpp.s:
-	$(MAKE) -f CMakeFiles\EjercicioClase_S1_Fstream.dir\build.make CMakeFiles/EjercicioClase_S1_Fstream.dir/transacciones.h.cpp.s
-.PHONY : transacciones.h.cpp.s
+transacciones.cpp.s:
+	$(MAKE) -f CMakeFiles\Ejercicio_ArchivosBinarios_TrabajoClase.dir\build.make CMakeFiles/Ejercicio_ArchivosBinarios_TrabajoClase.dir/transacciones.cpp.s
+.PHONY : transacciones.cpp.s
 
 # Help Target
 help:
@@ -209,7 +209,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... EjercicioClase_S1_Fstream
+	@echo ... Ejercicio_ArchivosBinarios_TrabajoClase
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cuentas.obj
@@ -218,9 +218,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... transacciones.h.obj
-	@echo ... transacciones.h.i
-	@echo ... transacciones.h.s
+	@echo ... transacciones.obj
+	@echo ... transacciones.i
+	@echo ... transacciones.s
 .PHONY : help
 
 

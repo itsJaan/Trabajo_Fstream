@@ -1,50 +1,54 @@
 #include <iostream>
 #include <fstream>
 #include "cuentas.h"
-#include "transaccion.h"
+#include "transacciones.h"
+#include "cuentas.h"
 
 using namespace std;
-
+int opc;
 
 int main() {
-
-    char numCuenta[4];
-    int menu;
-    int y;
-
-    cuentas cuenta;
     do {
-        cout << "---Menu---" << endl;
-        cout << "1.Ingresar nueva Cuenta\n";
-        cout << "2.Depositar ó Retirar\n";
-        cout << "3.Resumen de Cuentas\n";
-        cout << "0.Salir\n";
-        cin >> menu;
+        cout << " Menu Princioal " << endl;
+        cout << "1. Ingresar Cuenta" << endl;
+        cout << "2. Transaccion" << endl;
+        cout << "3. Consultar Historial" << endl;
+        cout << "0. Salir" << endl;
+        cout << "Ingrese una opcion:" << endl;
 
-        switch (menu) {
+        cin >> opc;
+        switch (opc) {
             case 1:
-                cuenta.crear_cuenta();
+                cuentas::agregarCliente();
                 break;
             case 2:
-                cout << "1.D \n2.R\n";
-                cin >> y;
-                if(y==1)
-                    trans::Depositar();
-                else
-                    trans::Retirar();
+                char t;
+                cout<<"---------Tipo de Transaccion-------\n";
+                cout<<"( D / R )   ";
+                cin>>t;
+                switch(t) {
+                    case 'd':
+                    case 'D':
+                        transacciones::agregarDeposito();
+                        break;
+                    case'R':
+                    case 'r':
+                        transacciones::agregarRetiro();
+                        break;
+                    default:
+                        cout<<"Opcion Invalida\n\n";
+                        break;
+                }
                 break;
             case 3:
-                cuenta.imprimir_resumen_cuentas();
-                //cuenta.imprimir_resumen_trans();
+                cuentas::consultarCliente();
+                cout<<"----------------------------------\n";
+                transacciones::consultarHisto();
+                cout<<"----------------------------------\n";
                 break;
-            case 0:
-                exit(0);
-
             default:
-                cout << "Opcion Invalida.";
                 break;
-
         }
-    }while(menu!=0);
+    }while(opc!=0);
+    return 0;
 }
-
